@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		693DDF6B25FD9CC900D32412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DDF6A25FD9CC900D32412 /* AppDelegate.swift */; };
 		693DDF6D25FD9CC900D32412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DDF6C25FD9CC900D32412 /* SceneDelegate.swift */; };
-		693DDF6F25FD9CC900D32412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DDF6E25FD9CC900D32412 /* ViewController.swift */; };
 		693DDF7225FD9CC900D32412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693DDF7025FD9CC900D32412 /* Main.storyboard */; };
 		693DDF7425FD9CCB00D32412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693DDF7325FD9CCB00D32412 /* Assets.xcassets */; };
 		693DDF7725FD9CCB00D32412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693DDF7525FD9CCB00D32412 /* LaunchScreen.storyboard */; };
+		693DDF8125FD9FBB00D32412 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DDF8025FD9FBB00D32412 /* LoginViewController.swift */; };
+		693DDF8425FD9FCE00D32412 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DDF8325FD9FCE00D32412 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		693DDF6725FD9CC900D32412 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		693DDF6A25FD9CC900D32412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		693DDF6C25FD9CC900D32412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		693DDF6E25FD9CC900D32412 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		693DDF7125FD9CC900D32412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		693DDF7325FD9CCB00D32412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		693DDF7625FD9CCB00D32412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		693DDF7825FD9CCB00D32412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693DDF8025FD9FBB00D32412 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		693DDF8325FD9FCE00D32412 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				693DDF6A25FD9CC900D32412 /* AppDelegate.swift */,
 				693DDF6C25FD9CC900D32412 /* SceneDelegate.swift */,
-				693DDF6E25FD9CC900D32412 /* ViewController.swift */,
 				693DDF7025FD9CC900D32412 /* Main.storyboard */,
 				693DDF7325FD9CCB00D32412 /* Assets.xcassets */,
 				693DDF7525FD9CCB00D32412 /* LaunchScreen.storyboard */,
 				693DDF7825FD9CCB00D32412 /* Info.plist */,
+				693DDF8025FD9FBB00D32412 /* LoginViewController.swift */,
+				693DDF8325FD9FCE00D32412 /* FeedViewController.swift */,
 			);
 			path = instagram;
 			sourceTree = "<group>";
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				693DDF6F25FD9CC900D32412 /* ViewController.swift in Sources */,
+				693DDF8125FD9FBB00D32412 /* LoginViewController.swift in Sources */,
 				693DDF6B25FD9CC900D32412 /* AppDelegate.swift in Sources */,
+				693DDF8425FD9FCE00D32412 /* FeedViewController.swift in Sources */,
 				693DDF6D25FD9CC900D32412 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
