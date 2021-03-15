@@ -66,18 +66,19 @@
                     <connections>
                         <outlet property="passwordField" destination="kN2-2G-TbI" id="p39-Ll-kmR"/>
                         <outlet property="usernameField" destination="ZCt-fa-XWN" id="A9T-we-M25"/>
+                        <segue destination="hHE-yV-bks" kind="presentation" identifier="loginSegue" id="0xQ-Xj-eEY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175.36231884057972" y="93.75"/>
+            <point key="canvasLocation" x="-91" y="94"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="VTC-tg-hOU">
             <objects>
                 <viewController id="HOh-rA-3q0" customClass="FeedViewController" customModule="instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a89-cf-CdM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FyA-Rz-yVW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -94,7 +95,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hHE-yV-bks" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xT1-f6-p2s">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
