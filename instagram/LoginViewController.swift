@@ -20,8 +20,21 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func signIn(_ sender: Any) {
+        
     }
     @IBAction func signUp(_ sender: Any) {
+        var user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+
+        user.signUpInBackground { (success, error) in
+            if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+            else{
+                print("Error \(error)!")
+            }
+        }
     }
 
 }
