@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         
     }
     @IBAction func signUp(_ sender: Any) {
-        var user = PFUser()
+        let user = PFUser()
         user.username = usernameField.text
         user.password = passwordField.text
 
@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
             else{
-                print("Error \(error)!")
+                print("Error: \(error?.localizedDescription)!")
             }
         }
     }
