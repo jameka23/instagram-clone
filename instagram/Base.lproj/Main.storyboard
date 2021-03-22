@@ -147,9 +147,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="captionLabel" destination="SZM-iO-Lbc" id="ghM-EA-7XO"/>
-                        <outlet property="photoView" destination="3qI-bT-t7I" id="g9V-30-guT"/>
-                        <outlet property="usernameLabel" destination="Th8-6i-aH5" id="Xbr-RZ-kKO"/>
+                        <outlet property="tableView" destination="Gi2-u0-dx5" id="qhT-He-sRc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCT-XT-47W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
