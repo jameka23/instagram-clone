@@ -7,4 +7,5 @@ target 'instagram' do
 
   # Pods for instagram
 pod 'Parse'
+pod 'AlamofireImage'
 end
