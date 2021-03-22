@@ -14,8 +14,10 @@ class FeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
     
-
     /*
     // MARK: - Navigation
 
