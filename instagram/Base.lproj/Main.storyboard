@@ -129,7 +129,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="SZM-iO-Lbc" id="gIk-8i-fnh"/>
-                                            <outlet property="photo" destination="3qI-bT-t7I" id="nYd-6G-SQV"/>
+                                            <outlet property="photoView" destination="3qI-bT-t7I" id="LEl-US-Dt1"/>
                                             <outlet property="userLabel" destination="Th8-6i-aH5" id="GmO-KD-X5c"/>
                                         </connections>
                                     </tableViewCell>
