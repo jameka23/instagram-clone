@@ -22,7 +22,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='/persist.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/persist.gif' title='persitLogin' width='250' alt='persit Log in' />
 
 
 # Parstagram - Part I
