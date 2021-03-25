@@ -46,12 +46,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
         
-//        let delegate = UIApplication.shared.delegate as! SceneDelegate
-//
-//        delegate.window?.rootViewController = loginViewController
+
         
-        guard let delegate = UIApplication.shared.connectedScenes as? UIWindowScene
-        let delegate = delegate.delegate as? SceneDelegate; else { return }
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        delegate.window?.rootViewController = loginViewController
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
