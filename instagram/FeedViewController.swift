@@ -60,6 +60,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         comment["posts"] = post
         comment["author"] = PFUser.current()!
         post.add(comment, forKey: "comments")
+        
+        post.saveInBackground { (success, error) in
+            if success{
+                print("comment saved")
+            }else{
+                print("Error saving comment")
+            }
+        }
     }
     
     
