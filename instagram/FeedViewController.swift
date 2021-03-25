@@ -39,6 +39,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    @IBAction func onLogOut(_ sender: Any) {
+        PFUser.logOut()
+        
+        //switch user back to login screen
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        
+//        let delegate = UIApplication.shared.delegate as! SceneDelegate
+//
+//        delegate.window?.rootViewController = loginViewController
+        
+        guard let delegate = UIApplication.shared.connectedScenes as? UIWindowScene
+        let delegate = delegate.delegate as? SceneDelegate; else { return }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
