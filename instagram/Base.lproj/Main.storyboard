@@ -140,21 +140,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eja-X2-w31">
-                                                    <rect key="frame" x="20" y="18" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eja-X2-w31">
+                                                    <rect key="frame" x="16" y="8" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-i5-6Dd">
-                                                    <rect key="frame" x="82" y="18" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-i5-6Dd">
+                                                    <rect key="frame" x="66" y="8" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Eja-X2-w31" firstAttribute="leading" secondItem="PZu-tG-zci" secondAttribute="leading" constant="16" id="4By-AI-ctg"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7Lf-i5-6Dd" secondAttribute="bottom" constant="8" id="DZJ-is-1Eg"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Lf-i5-6Dd" secondAttribute="trailing" constant="8" id="MJ7-Wt-rR6"/>
+                                                <constraint firstItem="7Lf-i5-6Dd" firstAttribute="top" secondItem="PZu-tG-zci" secondAttribute="top" constant="8" id="MRg-Q4-FLl"/>
+                                                <constraint firstItem="7Lf-i5-6Dd" firstAttribute="leading" secondItem="Eja-X2-w31" secondAttribute="trailing" constant="8" id="RhU-lE-Fme"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Eja-X2-w31" secondAttribute="bottom" constant="8" id="o0q-vy-lDZ"/>
+                                                <constraint firstItem="Eja-X2-w31" firstAttribute="top" secondItem="PZu-tG-zci" secondAttribute="top" constant="8" id="yMl-lO-kZ3"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
