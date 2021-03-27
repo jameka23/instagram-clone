@@ -2,7 +2,7 @@
 
 This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -11,7 +11,7 @@ The following **required** functionality is completed:
 - [x] User stays logged in across restarts. (1pt)
 - [x] User can log out. (1pt)
 - [x] User can view comments on a post. (3pts)
-- [ ] User can add a new comment. (5pts)
+- [x] User can add a new comment. (5pts)
 
 The following **bonus** features are implemented:
 
@@ -22,9 +22,13 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+<img src='/login.gif' title='login' width='250' alt='log in' />
 <img src='/persist.gif' title='persitLogin' width='250' alt='persit Log in' />
 <img src='/logout.gif' title='logout' width='250' alt='user log out' />
 <img src='/display.gif' title='display' width='250' alt='display comments' />
+<img src='/comment.gif' title='display' width='250' alt='commenting' />
+<img src='/persistentLogin.gif' title='display' width='250' alt='commenting' />
+<img src='/another.gif' title='display' width='250' alt='commenting' />
 
 
 
