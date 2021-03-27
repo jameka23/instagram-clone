@@ -22,10 +22,13 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+<img src='/login.gif' title='login' width='250' alt='log in' />
 <img src='/persist.gif' title='persitLogin' width='250' alt='persit Log in' />
 <img src='/logout.gif' title='logout' width='250' alt='user log out' />
 <img src='/display.gif' title='display' width='250' alt='display comments' />
 <img src='/comment.gif' title='display' width='250' alt='commenting' />
+<img src='/persistentLogin.gif' title='display' width='250' alt='commenting' />
+<img src='/another.gif' title='display' width='250' alt='commenting' />
 
 
 
