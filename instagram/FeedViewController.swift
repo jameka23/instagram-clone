@@ -8,12 +8,13 @@
 import UIKit
 import Parse
 import AlamofireImage
+import MessageInputBar
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
-    
+    let commentBar = MessageInputBar()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.keyboardDismissMode = .interactive 
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,6 +40,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Error with posts")
             }
         }
+    }
+    
+    override var inputAccessoryView: UIView?{
+        return commentBar
+    }
+    
+    override var canBecomeFirstResponder: Bool{
+        return true
     }
     
     @IBAction func onLogOut(_ sender: Any) {
