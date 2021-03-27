@@ -10,16 +10,21 @@ import Parse
 import AlamofireImage
 import MessageInputBar
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [PFObject]()
     let commentBar = MessageInputBar()
     var showsCommentBar = false
+    var selectedPost : PFObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        commentBar.inputTextView.placeholder = "Add a comment"
+        commentBar.sendButton.title = "Post"
+        commentBar.delegate = self
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
@@ -45,6 +50,35 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
+    
+    
+    func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
+        // create comment & clear dismiss
+        let comment = PFObject(className: "Comments")
+
+        comment["text"] = text
+        comment["posts"] = selectedPost
+        comment["author"] = PFUser.current()!
+        selectedPost.add(comment, forKey: "comments") // every post should have an array of comments
+
+        selectedPost.saveInBackground { (success, error) in
+            if success{
+                print("comment saved")
+            }else{
+                print("Error saving comment")
+            }
+        }
+        
+        tableView.reloadData()
+        
+        commentBar.inputTextView.text = nil
+        showsCommentBar = false
+        becomeFirstResponder()
+        commentBar.inputTextView.resignFirstResponder()
+        
+        
+    }
+    
     
     @objc func keyboardWillBeHidden(note:Notification){
         commentBar.inputTextView.text = nil
@@ -84,18 +118,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             becomeFirstResponder()
             commentBar.inputTextView.becomeFirstResponder()
         }
-//        comment["text"] = "This is a random ass comment"
-//        comment["posts"] = post
-//        comment["author"] = PFUser.current()!
-//        post.add(comment, forKey: "comments") // every post should have an array of comments
-//
-//        post.saveInBackground { (success, error) in
-//            if success{
-//                print("comment saved")
-//            }else{
-//                print("Error saving comment")
-//            }
-//        }
+        
+        selectedPost = post
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
